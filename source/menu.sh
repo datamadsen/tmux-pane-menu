@@ -13,7 +13,7 @@ menu_items=(
 '"Below in full width" _ "split-window -fv -c #{pane_current_path}"'
 '"Left in full height" < "split-window -fhb -c #{pane_current_path}"'
 '"Right in full height" > "split-window -fh -c #{pane_current_path}"'
-'"-a~~~~~~~~~~~~~~~~~~~ Navigate" "" ""'
+'"-~~~~~~~~~~~~~~~~~~~~ Navigate" "" ""'
 "'#{?#{>:#{window_panes},1},,-}Visual...' v 'run-shell \"tmux display-panes -d0\"'"
 "'#{?#{>:#{window_panes},1},,-}Last active' l 'last-pane'"
 "'#{?#{>:#{window_panes},1},,-}Up' 'up' 'run-shell \"tmux select-pane -U && $CURRENT_DIR/menu.sh\"'"
