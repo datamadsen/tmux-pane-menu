@@ -3,7 +3,7 @@
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 menu_items=(
-"'#{?#{window_zoomed_flag},Un-Zoom,Zoom}' z 'resize-pane -Z'"
+"'#{?#{>:#{window_panes},1},,-}#{?#{window_zoomed_flag},Un-Zoom,Zoom}' z 'resize-pane -Z'"
 '"Clock" c "clock-mode"'
 '"Kill" x "kill-pane"'
 '"-~~~~~~~~~~~~~~~~~~~~~~~ Split" "" ""'
